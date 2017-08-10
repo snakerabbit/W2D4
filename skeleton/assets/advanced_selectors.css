@@ -43,4 +43,47 @@ ol {
   font-weight: bold;
 }
 
+input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+}
 
+input[type="submit"]:last-child {
+  background-color: gold;
+}
+
+input[type="submit"]:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+input[type="select"] {
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    background-image: url(../assets/stars.png);
+    vertical-align: bottom;
+    outline: none;
+}
+
+input[type="radio"]:checked {
+     background-position: 30px 30px;
+ }
+
+ol li:nth-of-type(2n) {
+    background-color: lightgray;
+}
+
+h2 + .user_review {
+  border-top: 1px solid black;
+}
